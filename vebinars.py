@@ -15,7 +15,7 @@
 # else:
 #     print('Корней нет')
 
-import math
+#import math
 
 #print(math.ceil(2.1)) #Округление числа 2.1 до 3, округление нецелого числа до бОльшего
 #print(math.fabs(-5)) #Модуль числа
@@ -25,3 +25,9 @@ import math
 #print(math.isinf(50)) #Является ли число бесконечным?
 #print(math.pow(3, 3)) #Возведение первого числа в степень второго
 #print(math.sqrt(1600)) #Нахождение квадратного корня
+
+'''def test (*args):
+     print(args)
+
+test(1,2,3,4,5,6)'''
+
