@@ -31,3 +31,45 @@
 
 test(1,2,3,4,5,6)'''
 
+'''def count_args (*args):
+    print(len(args))
+
+count_args(1, 4, 6, 8, 9)
+'''
+
+'''def mean (*args):
+    count = 0
+    c = 0
+    for i in args:
+        if type(i)== int or type(i)==float:
+            count += i
+            c += 1
+    print(count / c)
+
+mean(1, 'cckck', True, 8, 9)
+'''
+
+'''import csv
+with open('countries.csv', 'r') as r:
+   curs = csv.reader(r)
+   for i in curs:
+      print(i)
+'''
+'''# Необходимо написать код для дозаписи кортежа в файл
+(5, 'Vova', 'Korolev', 67, 543, 5434)
+
+with open('data.csv', 'a', newline = '') as f:
+  curs = csv.writer(f)
+  curs.writerow((5, 'Vova', 'Korolev', 67, 543, 5434))'''
+
+# def plus(a,b):
+#      return a+b
+
+# print(plus(1,2))
+
+# if __name__ == '__main__':
+#     print('Run vebinars.py')
+# else:
+#     print('Run from another file!')
+# #print(__name__)
+
