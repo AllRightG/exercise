@@ -55,12 +55,12 @@ with open('countries.csv', 'r') as r:
    for i in curs:
       print(i)
 '''
-'''# Необходимо написать код для дозаписи кортежа в файл
-(5, 'Vova', 'Korolev', 67, 543, 5434)
+# # Необходимо написать код для дозаписи кортежа в файл
+# (5, 'Vova', 'Korolev', 67, 543, 5434)
 
-with open('data.csv', 'a', newline = '') as f:
-  curs = csv.writer(f)
-  curs.writerow((5, 'Vova', 'Korolev', 67, 543, 5434))'''
+# with open('data.csv', 'a', newline = '') as f:
+#   curs = csv.writer(f)
+#   curs.writerow((5, 'Vova', 'Korolev', 67, 543, 5434))
 
 # def plus(a,b):
 #      return a+b
@@ -72,4 +72,3 @@ with open('data.csv', 'a', newline = '') as f:
 # else:
 #     print('Run from another file!')
 # #print(__name__)
-
