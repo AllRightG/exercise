@@ -72,3 +72,4 @@ with open('countries.csv', 'r') as r:
 # else:
 #     print('Run from another file!')
 # #print(__name__)
+
