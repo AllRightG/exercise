@@ -1,7 +1,7 @@
 #ООП:
 
 #Класс - шаблон для начала объекта
-#Объект - сущность которое обладает поведением и состояние в классе, реализация какого-либо класса
+#Объект - сущность которое обладает поведением и состояние класса, реализация какого-либо класса
 #Свойства - переменные внутри класса которые его описывают
 #Функции - методы класса
 
@@ -27,3 +27,25 @@
 # fun.function()
 # x = fun.material
 # print(x)
+
+class tableClass:
+  __color = ''
+
+  def __init__(self, mat):
+  #self.color = color
+    self.mat = mat
+
+  @staticmethod
+  def testStMet(color):
+    if color == 'red':
+      print('Red')
+    else:
+      print('No Red')
+
+  @classmethod
+  def testClsMet(cls):
+    tmp = cls('metal')
+    return tmp
+
+redT = tableClass.testClsMet()
+print(redT.mat)
