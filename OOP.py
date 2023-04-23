@@ -161,7 +161,7 @@ obj1 = Matrix([[1, 2, 3], [4, 5, 6]])
 print((obj1))
 '''
 
-class Matrix:
+""" class Matrix:
     def __init__(self, data):
         columns = len(data[0])
         correct = all(map(lambda i: len(i) == columns, data))
@@ -179,4 +179,5 @@ class Matrix:
 
 
 obj1 = Matrix([[1, 2, 3], [4, 5, 6]])
-print((obj1))
+print((obj1)) """
+
