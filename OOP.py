@@ -161,7 +161,7 @@ obj1 = Matrix([[1, 2, 3], [4, 5, 6]])
 print((obj1))
 '''
 
-""" class Matrix:
+class Matrix:
     def __init__(self, data):
         columns = len(data[0])
         correct = all(map(lambda i: len(i) == columns, data))
@@ -177,7 +177,17 @@ print((obj1))
         return res[:-1]'''
         return '\n'.join(map(lambda row: ' '.join(map(str, row)), self.a))
 
+    def __add__(self, other):
+      if type(other) is Matrix and (self.rows, self.colums) == (other.rows, other.columns):
+        data = []
+        for row_a, row_b in zip(self.a, other.a):
+          data.append(list(map(lambda a, b: a+b, row_a, row_b)))
+        return Matrix(data)
+
 
 obj1 = Matrix([[1, 2, 3], [4, 5, 6]])
-print((obj1)) """
+obj2 = Matrix([[7, 8, 9], [10, 10, 10]])
 
+obj3 = obj1 + obj2 #+ реализуется через метод __add__, реализуется у левого объекта, ссылка self записывается на него, а other на правый
+
+print(obj3)
