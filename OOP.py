@@ -160,7 +160,7 @@ class Matrix:
 obj1 = Matrix([[1, 2, 3], [4, 5, 6]])
 print((obj1))
 '''
-
+'''
 class Matrix:
     def __init__(self, data):
         columns = len(data[0])
@@ -172,9 +172,9 @@ class Matrix:
 
     def __str__(self):
         res=''
-        '''for row in self.a:
+        for row in self.a:
             res+=' '.join(map(str, row)) + '\n'
-        return res[:-1]'''
+        return res[:-1]
         return '\n'.join(map(lambda row: ' '.join(map(str, row)), self.a))
 
     def __add__(self, other):
@@ -191,3 +191,4 @@ obj2 = Matrix([[7, 8, 9], [10, 10, 10]])
 obj3 = obj1 + obj2 #+ реализуется через метод __add__, реализуется у левого объекта, ссылка self записывается на него, а other на правый
 
 print(obj3)
+'''
